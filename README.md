@@ -24,7 +24,7 @@ OpenWrt build environment in docker.
 - Build image.
   
   ```shell
-  docker build -t p3terx/openwrt-build-env github.com/P3TERX/openwrt-build-env
+  docker build -t p3terx/openwrt-build-env github.com/Higaner/openwrt-build-env
   ```
 
 ### Run container
