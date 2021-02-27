@@ -5,8 +5,8 @@
 
 ARG BASE_IMAGE_TAG=20.04
 FROM linuxplus/ubuntu:${BASE_IMAGE_TAG}
-RUN export DEBIAN_FRONTEND=noninteractive && \
-    bash -c 'yes | unminimize'
+RUN export DEBIAN_FRONTEND=noninteractive 
+RUN bash -c 'yes | unminimize'
 
 USER root
 
