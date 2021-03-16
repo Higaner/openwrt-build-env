@@ -1,17 +1,17 @@
 # https://github.com/P3TERX/openwrt-build-env
 # OpenWrt build environment in docker
 # MIT License
-# Copyright (c) 2020 P3TERX <https://p3terx.com>
+# Copyright (c) 2020  P3TERX <https://p3terx.com>
 
 ARG BASE_IMAGE_TAG=20.04
 FROM linuxplus/ubuntu:${BASE_IMAGE_TAG}
-RUN export DEBIAN_FRONTEND=noninteractive 
-RUN bash -c 'yes | unminimize'
-
+ 
 USER root
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG DEPENDS_LIST=depends-ubuntu-2004
+
+RUN bash -c 'yes | unminimize'
 
 RUN apt-get update -qq && \
     apt-get upgrade -qqy && \
